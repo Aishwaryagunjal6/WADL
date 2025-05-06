@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Delights - Restaurant Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff5e6;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .intro {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .top-dishes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .dish-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .cuisines {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .cuisine-tag {
+            background-color: #8b0000;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .menu-table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-table th,
+        .menu-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .menu-table th {
+            background-color: #8b0000;
+            color: white;
+        }
+
+        .dish-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .top-dishes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABC Delights</h1>
+        <p>Experience the Art of Fine Dining</p>
+    </header>
+
+    <div class="intro">
+        <h2>Welcome to ABC Delights</h2>
+        <p>Established in 2005, we bring you authentic flavors crafted with passion and premium ingredients. 
+           <br>Chef's Special Message: "Every dish tells a story - let us take you on a culinary journey!"</p>
+        <h3>Quality Assurance</h3>
+        <p>✓ Fresh Ingredients | ✓ Hygiene Certified | ✓ Customizable Spice Levels</p>
+    </div>
+
+    <section class="top-dishes">
+        <div class="dish-card">
+            <h3>🥇 Popular Dish #1</h3>
+            <h4>Paneer Tikka</h4>
+            <img src="https://via.placeholder.com/200x150" alt="Paneer Tikka" class="dish-image">
+            <p>Marinated cottage cheese grilled to perfection</p>
+        </div>
+        <div class="dish-card">
+            <h3>🥈 Popular Dish #2</h3>
+            <h4>Hyderabadi Biryani</h4>
+            <img src="https://via.placeholder.com/200x150" alt="Biryani" class="dish-image">
+            <p>Aromatic basmati rice with tender meat</p>
+        </div>
+    </section>
+
+    <div class="cuisines">
+        <span class="cuisine-tag">Italian</span>
+        <span class="cuisine-tag">Indian</span>
+        <span class="cuisine-tag">Chinese</span>
+    </div>
+
+    <table class="menu-table">
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Description</th>
+                <th>Price (₹)</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Butter Chicken</td>
+                <td>Creamy tomato-based curry with tender chicken</td>
+                <td>₹350</td>
+                <td><img src="https://via.placeholder.com/100" alt="Butter Chicken" class="dish-image"></td>
+            </tr>
+            <tr>
+                <td>Margherita Pizza</td>
+                <td>Classic Italian pizza with fresh basil</td>
+                <td>₹400</td>
+                <td><img src="https://via.placeholder.com/100" alt="Pizza" class="dish-image"></td>
+            </tr>
+            <tr>
+                <td>Hakka Noodles</td>
+                <td>Stir-fried noodles with vegetables</td>
+                <td>₹250</td>
+                <td><img src="https://via.placeholder.com/100" alt="Noodles" class="dish-image"></td>
+            </tr>
+            <tr>
+                <td>Gulab Jamun</td>
+                <td>Traditional Indian sweet dessert</td>
+                <td>₹150</td>
+                <td><img src="https://via.placeholder.com/100" alt="Gulab Jamun" class="dish-image"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>Contact us: 123-456-7890 | Address: Food Street, Mumbai</p>
+        <p>Follow us on social media for daily specials!</p>
+    </footer>
+</body>
+</html>

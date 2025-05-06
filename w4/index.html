@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Hub - Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .learning-paths {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .path-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .course-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .category-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .learning-paths,
+            .course-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Learning Hub</h1>
+        <p>Expand Your Knowledge, Anytime, Anywhere</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to Online Learning Hub</h2>
+            <p>Access world-class education from industry experts. Learn at your own pace with our flexible online courses and advance your career.</p>
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>Flexible learning schedule</li>
+                <li>Industry-relevant curriculum</li>
+                <li>Expert instructors</li>
+                <li>Affordable pricing</li>
+            </ul>
+        </section>
+
+        <section class="learning-paths">
+            <div class="path-card">
+                <h3>1. Beginner</h3>
+                <p>Start your learning journey with foundational courses</p>
+            </div>
+            <div class="path-card">
+                <h3>2. Intermediate</h3>
+                <p>Build on your existing knowledge with advanced concepts</p>
+            </div>
+            <div class="path-card">
+                <h3>3. Advanced</h3>
+                <p>Master complex topics and specialize your skills</p>
+            </div>
+        </section>
+
+        <section class="course-categories">
+            <div class="category-card">
+                <h3>AI & ML</h3>
+                <p>Master Artificial Intelligence and Machine Learning</p>
+            </div>
+            <div class="category-card">
+                <h3>Data Science</h3>
+                <p>Become proficient in data analysis and visualization</p>
+            </div>
+            <div class="category-card">
+                <h3>Web Development</h3>
+                <p>Learn full-stack development and modern frameworks</p>
+            </div>
+        </section>
+
+        <h2>Available Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                    <th>Duration</th>
+                    <th>Fee (INR ₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Introduction to Python Programming</td>
+                    <td>Dr. Sarah Johnson</td>
+                    <td>6 Weeks</td>
+                    <td>₹2,499</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning Fundamentals</td>
+                    <td>Prof. Michael Chen</td>
+                    <td>8 Weeks</td>
+                    <td>₹4,999</td>
+                </tr>
+                <tr>
+                    <td>Full-Stack Web Development</td>
+                    <td>Emily Rodriguez</td>
+                    <td>12 Weeks</td>
+                    <td>₹6,999</td>
+                </tr>
+                <tr>
+                    <td>Data Analysis with Python</td>
+                    <td>Dr. James Wilson</td>
+                    <td>6 Weeks</td>
+                    <td>₹3,499</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Contact us: info@learninghub.com | Phone: +91 98765 43210</p>
+        <p>Follow us on social media: [Social Media Links]</p>
+    </footer>
+</body>
+</html>

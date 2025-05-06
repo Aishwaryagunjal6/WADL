@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "designation": "Software Engineer",
+    "department": "Development",
+    "salary": 85000,
+    "profileImage": "/images/profile-placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "designation": "Project Manager",
+    "department": "Management",
+    "salary": 95000,
+    "profileImage": "/images/profile-placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "designation": "Project Manager",
+    "department": "Management",
+    "salary": 95000,
+    "profileImage": "/images/profile-placeholder.jpg"
+  }
+]

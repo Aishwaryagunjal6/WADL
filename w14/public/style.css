@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-name {
+  color: #1a73e8;
+  margin: 0 0 10px 0;
+}
+
+.user-info {
+  margin: 5px 0;
+  color: #666;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}

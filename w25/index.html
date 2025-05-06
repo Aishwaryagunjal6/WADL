@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .profile-img { 
+            max-width: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .skill-bar {
+            background: #ddd;
+            height: 20px;
+            margin: 5px 0;
+        }
+        .skill-level {
+            background: #4CAF50;
+            height: 100%;
+            text-align: right;
+            padding-right: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>John Doe</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div class="ui-corner-all custom-corners">
+            <div class="ui-bar ui-bar-a">
+                <h3>About Me</h3>
+            </div>
+            <div class="ui-body ui-body-a">
+                <img src="profile.jpg" class="profile-img" alt="Profile Picture">
+                <p>Hi! I'm a full-stack developer with 5 years of experience in web development.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Page -->
+<div data-role="page" id="projects">
+    <div data-role="header">
+        <h1>My Projects</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>E-commerce Platform</h3>
+                <p>Built with React and Node.js...</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Mobile Fitness App</h3>
+                <p>React Native application...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Page -->
+<div data-role="page" id="skills">
+    <div data-role="header">
+        <h1>Skills</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+    </div>
+
+    <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:90%">JavaScript</div>
+                </div>
+            </li>
+            <li>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:80%">Python</div>
+                </div>
+            </li>
+            <li>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width:75%">React</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+    <div data-role="header">
+        <h1>Contact Me</h1>
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+    </div>
+
+    <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li><a href="mailto:john@example.com" class="ui-icon-mail">john@example.com</a></li>
+            <li><a href="tel:+1234567890" class="ui-icon-phone">+1 (234) 567-890</a></li>
+            <li><a href="https://linkedin.com/in/johndoe" class="ui-icon-linkedin">LinkedIn</a></li>
+            <li><a href="https://github.com/johndoe" class="ui-icon-github">GitHub</a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

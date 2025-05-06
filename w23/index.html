@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PICT Student Clubs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        .club-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+        }
+        .achievement-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .club-card {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="page">
+    <!-- Header -->
+    <div data-role="header">
+        <h1>PICT Student Clubs</h1>
+        <img src="https://via.placeholder.com/120x40.png?text=PICT+Logo" alt="PICT Logo" class="ui-btn-right">
+    </div>
+
+    <!-- Content -->
+    <div role="main" class="ui-content">
+        <!-- Coding Club -->
+        <div data-role="collapsible" data-collapsed="false">
+            <h2>Coding Club</h2>
+            <div class="club-card">
+                <img src="https://via.placeholder.com/600x400.png?text=Coding+Club" class="club-img" alt="Coding Club">
+                <p><strong>Description:</strong> Platform for coding enthusiasts to practice, compete, and develop innovative solutions.</p>
+                <div class="achievement-list">
+                    <h4>Achievements:</h4>
+                    <ul data-role="listview">
+                        <li>Won National Hackathon 2022</li>
+                        <li>100+ members placed in FAANG companies</li>
+                        <li>Developed campus navigation app</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Robotics Club -->
+        <div data-role="collapsible">
+            <h2>Robotics Club</h2>
+            <div class="club-card">
+                <img src="https://via.placeholder.com/600x400.png?text=Robotics+Club" class="club-img" alt="Robotics Club">
+                <p><strong>Description:</strong> Design and build innovative robots for various competitions and industrial applications.</p>
+                <div class="achievement-list">
+                    <h4>Achievements:</h4>
+                    <ul data-role="listview">
+                        <li>1st place in National Robotics Challenge</li>
+                        <li>Developed automated campus delivery bot</li>
+                        <li>5 patents filed in automation tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dance Club -->
+        <div data-role="collapsible">
+            <h2>Dance Club</h2>
+            <div class="club-card">
+                <img src="https://via.placeholder.com/600x400.png?text=Dance+Club" class="club-img" alt="Dance Club">
+                <p><strong>Description:</strong> Promote dance as art form through workshops, performances, and competitions.</p>
+                <div class="achievement-list">
+                    <h4>Achievements:</h4>
+                    <ul data-role="listview">
+                        <li>National inter-college dance competition winners</li>
+                        <li>Annual cultural fest performances</li>
+                        <li>Collaboration with professional dance troupes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Entrepreneurship Club -->
+        <div data-role="collapsible">
+            <h2>Entrepreneurship Club</h2>
+            <div class="club-card">
+                <img src="https://via.placeholder.com/600x400.png?text=Entrepreneurship" class="club-img" alt="Entrepreneurship Club">
+                <p><strong>Description:</strong> Nurture startup culture and business leadership skills among students.</p>
+                <div class="achievement-list">
+                    <h4>Achievements:</h4>
+                    <ul data-role="listview">
+                        <li>5 student startups funded</li>
+                        <li>Hosted national business plan competition</li>
+                        <li>Mentorship from industry leaders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" class="ui-bar">
+        <h4>© 2023 PICT Student Activities Council</h4>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

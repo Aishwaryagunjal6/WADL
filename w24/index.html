@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <style>
+        .movie-poster {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        .review-box {
+            background: #f8f8f8;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="page">
+    <!-- Header -->
+    <div data-role="header">
+        <h1>Movie Reviews</h1>
+    </div>
+
+    <!-- Content -->
+    <div role="main" class="ui-content">
+        <!-- Movie 1 -->
+        <div data-role="collapsible">
+            <h2>The Dark Knight</h2>
+            <img src="https://via.placeholder.com/300x450.png?text=The+Dark+Knight" class="movie-poster" alt="The Dark Knight Poster">
+            <p><strong>Genre:</strong> Action, Crime, Drama</p>
+            <p><strong>Summary:</strong> Batman faces his greatest challenge when a master thief plunges Gotham into anarchy.</p>
+            <div class="review-box ui-body ui-body-a ui-corner-all">
+                <h4>Review:</h4>
+                <p>A gripping superhero masterpiece with an iconic performance by Heath Ledger as the Joker. Christopher Nolan delivers a tense, complex crime saga.</p>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div data-role="collapsible">
+            <h2>Inception</h2>
+            <img src="https://via.placeholder.com/300x450.png?text=Inception" class="movie-poster" alt="Inception Poster">
+            <p><strong>Genre:</strong> Action, Adventure, Sci-Fi</p>
+            <p><strong>Summary:</strong> A thief who enters people's dreams attempts to plant an idea in a CEO's mind.</p>
+            <div class="review-box ui-body ui-body-a ui-corner-all">
+                <h4>Review:</h4>
+                <p>Mind-bending visual spectacle with incredible practical effects. Leonardo DiCaprio leads a stellar cast in this cerebral heist film.</p>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div data-role="collapsible">
+            <h2>Parasite</h2>
+            <img src="https://via.placeholder.com/300x450.png?text=Parasite" class="movie-poster" alt="Parasite Poster">
+            <p><strong>Genre:</strong> Thriller, Dark Comedy</p>
+            <p><strong>Summary:</strong> A poor family schemes to become employed by a wealthy household.</p>
+            <div class="review-box ui-body ui-body-a ui-corner-all">
+                <h4>Review:</h4>
+                <p>A brilliant social satire that masterfully blends humor and tension. Oscar-winning masterpiece with unforgettable twists.</p>
+            </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div data-role="collapsible">
+            <h2>The Grand Budapest Hotel</h2>
+            <img src="https://via.placeholder.com/300x450.png?text=Grand+Budapest" class="movie-poster" alt="Grand Budapest Poster">
+            <p><strong>Genre:</strong> Comedy, Drama</p>
+            <p><strong>Summary:</strong> A legendary concierge and his lobby boy become embroiled in a inheritance dispute.</p>
+            <div class="review-box ui-body ui-body-a ui-corner-all">
+                <h4>Review:</h4>
+                <p>Wes Anderson's signature whimsical style shines in this visually stunning, quirky comedy with an all-star cast.</p>
+            </div>
+        </div>
+
+        <!-- Movie 5 -->
+        <div data-role="collapsible">
+            <h2>Interstellar</h2>
+            <img src="https://via.placeholder.com/300x450.png?text=Interstellar" class="movie-poster" alt="Interstellar Poster">
+            <p><strong>Genre:</strong> Sci-Fi, Adventure</p>
+            <p><strong>Summary:</strong> Astronauts travel through a wormhole to find a new home for humanity.</p>
+            <div class="review-box ui-body ui-body-a ui-corner-all">
+                <h4>Review:</h4>
+                <p>Visually stunning space epic with emotional depth. Hans Zimmer's score elevates the cosmic journey.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" class="center">
+        <h4>Movie Reviews © 2023</h4>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
